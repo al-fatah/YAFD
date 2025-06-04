@@ -39,3 +39,52 @@ YAFD is a prototype food delivery system designed to explore innovative and equi
 
 ---
 
+## 🚀 DevOps Highlights
+
+- **Containerized** using Docker
+- **GitHub Actions** pipeline includes:
+  - Linting
+  - Unit testing
+  - Docker build and push
+- Minimal security (hashed passwords, input validation)
+
+---
+
+## 🔄 Agile Artifacts
+
+- Product Backlog and User Stories
+- Sprint Plans (2-week sprints)
+- Burndown Chart
+- Sprint Reviews and Retrospectives
+
+---
+
+## 💡 Design Patterns Used
+
+| Pattern | Purpose |
+|--------|---------|
+| Factory | User creation based on role |
+| Strategy | Incentive calculation per role |
+| Observer | Dynamic rating updates |
+| Singleton | Database connection |
+| Template Method | Custom order flows |
+
+---
+
+## 🧪 Testing
+
+- Unit tests included for:
+  - `OrderService`
+  - `IncentiveStrategy`
+  - `DeliveryService`
+- Run using: `pytest` or `JUnit`
+
+---
+
+## 📍 Limitations
+
+- Not cloud-native or microservices-based
+- Minimal security & no production scalability
+- Intended as a functional prototype only
+
+---
