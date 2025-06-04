@@ -71,16 +71,6 @@ YAFD is a prototype food delivery system designed to explore innovative and equi
 
 ---
 
-## 🧪 Testing
-
-- Unit tests included for:
-  - `OrderService`
-  - `IncentiveStrategy`
-  - `DeliveryService`
-- Run using: `pytest` or `JUnit`
-
----
-
 ## 📍 Limitations
 
 - Not cloud-native or microservices-based
