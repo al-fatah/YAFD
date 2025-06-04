@@ -25,7 +25,7 @@ jobs:
     - name: Run unit tests
       run: |
         cd 5_Source_Code/backend
-        pytest
+        pytest tests/
 
     - name: Build Docker image
       run: |
