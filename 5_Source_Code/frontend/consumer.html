@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>YAFD – Consumer</title>
+</head>
+<body>
+  <h1>Order Food</h1>
+
+  <form action="http://localhost:5050/order" method="POST">
+    <label for="consumer">Your Name:</label><br>
+    <input type="text" id="consumer" name="consumer" placeholder="e.g., Alice" required><br><br>
+
+    <label for="item">Enter Food Item:</label><br>
+    <input type="text" id="item" name="item" placeholder="e.g., Chicken Rice" required><br><br>
+
+    <button type="submit">Place Order</button>
+  </form>
+</body>
+</html>

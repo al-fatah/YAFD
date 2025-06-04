@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>YAFD – Rider Dashboard</title>
+  <script>
+    async function loadOrders() {
+      const response = await fetch("http://localhost:5050/orders");
+      const orders = await response.json();
+
+      const list = document.getElementById("deliveryList");
+      list.innerHTML = "";
+
+      const preparedOrders = orders.filter(order => order.status === "Prepared");
+
+      if (preparedOrders.length === 0) {
+        list.innerHTML = "<li>No orders ready for delivery</li>";
+        return;
+      }
+
+      preparedOrders.forEach((order) => {
+        const item = document.createElement("li");
+        item.innerHTML = `
+          <strong>Order #${order.id}</strong><br>
+          Item: ${order.item} <br>
+          Consumer: ${order.consumer} <br>
+          Prepared at: ${new Date(order.timestamp).toLocaleString()} <br>
+          Status: <em>${order.status}</em><br>
+          <button onclick="markDelivered(${order.id})">Mark as Delivered</button>
+        `;
+        list.appendChild(item);
+      });
+    }
+
+    async function markDelivered(orderId) {
+      const formData = new FormData();
+      formData.append("order_id", orderId);
+      formData.append("status", "Delivered");
+
+      await fetch("http://localhost:5050/update_status", {
+        method: "POST",
+        body: formData,
+      });
+
+      loadOrders(); // Refresh list
+    }
+
+    window.onload = loadOrders;
+  </script>
+</head>
+<body>
+  <h1>Rider Dashboard</h1>
+  <h2>Prepared Orders</h2>
+  <ul id="deliveryList">
+    <li>Loading...</li>
+  </ul>
+</body>
+</html>
