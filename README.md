@@ -1,4 +1,4 @@
-# YAFD – Yet Another Food Delivery (Proof of Concept)
+# YAFD – Yet Another Food Delivery
 
 YAFD is a prototype food delivery system designed to explore innovative and equitable incentive mechanisms for consumers, riders, and merchants. This project prioritizes robustness, maintainability, and extensibility over scalability, with a focus on core software engineering practices in a monolithic, client-server web application.
 
