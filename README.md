@@ -4,7 +4,7 @@ YAFD is a prototype food delivery system designed to explore innovative and equi
 
 ---
 
-## 📌 Project Objectives
+## Project Objectives
 
 - Manage consumers, riders, and merchants
 - Enable food ordering and delivery tracking
@@ -16,7 +16,7 @@ YAFD is a prototype food delivery system designed to explore innovative and equi
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
 - **Architecture**: Client/Server (Web frontend + Monolithic backend)
 - **Backend**: Python Flask / Java Spring Boot (monolith)
@@ -26,7 +26,7 @@ YAFD is a prototype food delivery system designed to explore innovative and equi
 
 ---
 
-## 🧱 Modules
+## Modules
 
 | Module | Description |
 |--------|-------------|
@@ -39,7 +39,7 @@ YAFD is a prototype food delivery system designed to explore innovative and equi
 
 ---
 
-## 🚀 DevOps Highlights
+## DevOps Highlights
 
 - **Containerized** using Docker
 - **GitHub Actions** pipeline includes:
@@ -50,7 +50,7 @@ YAFD is a prototype food delivery system designed to explore innovative and equi
 
 ---
 
-## 🔄 Agile Artifacts
+## Agile Artifacts
 
 - Product Backlog and User Stories
 - Sprint Plans (2-week sprints)
@@ -59,7 +59,7 @@ YAFD is a prototype food delivery system designed to explore innovative and equi
 
 ---
 
-## 💡 Design Patterns Used
+## Design Patterns Used
 
 | Pattern | Purpose |
 |--------|---------|
@@ -71,7 +71,7 @@ YAFD is a prototype food delivery system designed to explore innovative and equi
 
 ---
 
-## 📍 Limitations
+## Limitations
 
 - Not cloud-native or microservices-based
 - Minimal security & no production scalability
